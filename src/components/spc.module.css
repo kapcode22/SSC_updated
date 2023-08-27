@@ -1,0 +1,100 @@
+/* .container{
+    display: flex;
+    min-height:100px;;
+    max-width:100%;
+    object-fit: cover;
+    align-content: center;
+    background-color: rgb(0, 255, 140);
+
+} */
+
+.middle {
+	align-items: center;
+}
+.image_container {
+  width: 100%; /* Set the width of the container */
+  height: 350px; /* Set the height of the container */
+  background-image: url('../images/stc.jpeg');
+  background-size: cover; /* This will cover the entire container */
+  background-position: center;
+  position: relative; /* Center the image within the container */
+}
+
+
+
+
+  .image_container h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+
+  .text{
+    padding-top: 2%;
+    color: rgb(52, 38, 213);
+    align-items: center;
+  }
+
+.midcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create two equal columns */
+  gap: 10px; 
+}
+  
+.column img{
+  max-width: 100%;
+}
+
+.eventcontainer{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center cards horizontally */
+  padding: 10px; /* Optional padding around the card container */
+}
+
+.card2 {
+  width: 300px; /* Adjust the width as needed */
+  padding: 20px; /* Padding inside the card */
+  border: 1px solid #ccc;
+  margin: 10px auto; /* Equal margin on left and right, centers the card */
+}
+
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+.rounded-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgb(0, 0, 0);
+  box-shadow: 0 2px 4px rgba(153, 7, 7, 0.1);
+}
+
+.temp {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}

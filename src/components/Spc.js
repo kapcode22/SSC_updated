@@ -1,5 +1,5 @@
 import React from "react";
-import stylec from "./club.module.css";
+import stylec from "./spc.module.css";
 import spc from "../images/spc.jpg";
 import stc from "../images/stc.jpeg";
 
