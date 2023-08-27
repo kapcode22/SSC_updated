@@ -16,6 +16,7 @@ const club = () => {
             </div>
 
             <div className={stylec.midcontainer}>
+                
                 <div className="column">
                     <img src={spc} alt="..."></img>
                 </div>
