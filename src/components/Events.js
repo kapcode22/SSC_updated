@@ -5,10 +5,10 @@ import pm from '../images/ps.jpeg'
 import vc from "../images/vc.jpeg"
 import am from "../images/am.jpeg"
 import pfc from "../images/pfc.png"
-import ummed from "../images/ummed.jpeg"
-import pregrad from "../images/pregrad.jpeg"
-import lwt from "../images/lwt.jpeg"
-import tpf from "../images/tpf.png"
+import ummed from "../images/ummed.png"
+import pregrad from "../images/pregrad.png"
+import lwt from "../images/lwt.png"
+
 function Events() {
     return (
        
@@ -69,7 +69,7 @@ function Events() {
                                 <a className="cursor-pointer mx-10" href="//pregrad.in"><img src={ummed} className="h-auto w-60" alt="LWT Logo"></img></a>
                                 <a className="cursor-pointer mx-10" href="//theproductfolks.com"><img src={pregrad} className="h-auto w-60" alt="LWT Logo"></img></a>
                                 <a className="cursor-pointer mx-10" href="//theproductfolks.com"><img src={lwt} className="h-auto w-60" alt="LWT Logo"></img></a>
-                                <a className="cursor-pointer mx-10" href="//theproductfolks.com"><img src={tpf} className="h-auto w-60" alt="LWT Logo"></img></a>
+                                <a className="cursor-pointer mx-10" href="//theproductfolks.com"><img src={pfc} className="h-auto w-60" alt="LWT Logo"></img></a>
                                 
 
                              </Marquee> 
