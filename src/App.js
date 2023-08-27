@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css';
-import Club from "./components/club.js"
+import Club from "./components/Club.js"
 import Home from "./components/Home.js"
 import Navbar  from "./components/Navbar.js";
 import Team from './components/Team.js'
@@ -43,7 +43,6 @@ export default function App() {
           <Route exact path="/sahyog">
             <Sahyog/>
           </Route>
-          
 
           </Switch>
       

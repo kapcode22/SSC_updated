@@ -1,97 +1,183 @@
-import React from 'react'
-import stylec from './club.module.css'
-import spc from '../images/spc.jpg'
-import stc from '../images/stc.jpeg'
+import React ,{useState} from 'react'
+import sty from './Club.module.css'
+// import CircularMenu from './CircularMenu';
 
-const club = () => {
-  return (
-    <div>
-      
-      <div className={stylec.image_container} >
-       {/* <img  src={image1} alt='...'></img> */}
-       <h3 className={stylec.h3}>Social Project Club</h3>
-       </div>
+const Club = () => {
+  const [rotationClass, setRotationClass] = useState('first-rotation ease-rotation');
+  const [activeBlock, setActiveBlock] = useState('on');
 
-       <div  >
-        <h1 className={stylec.text}> About us</h1>
-       </div>
+  const handleClick = (newRotationClass, newActiveBlock) => {
+    setRotationClass(newRotationClass);
+    setActiveBlock(newActiveBlock);
+  };
+
+    return (
+        <div className={sty.body}>
+            {/* <div class={sty.semi_circle}>
+                <div class={sty.semicircle}></div>
+                <div class={`${sty.circle} ${sty.circle1}`}></div>
+                <div class={`${sty.circle} ${sty.circle2}`}></div>
+                <div class={`${sty.circle} ${sty.circle3}`}></div>
+                <div class={`${sty.circle} ${sty.circle4}`}></div>
+            </div> */}
 
 
-        <div  className={stylec.midcontainer}>
-          <div className="column">
-           <img src={spc} alt='...'></img>
-          </div>
-          <div className="column mt-5 mx-5">
-              <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias beatae consequuntur rem
-              pariatur explicabo facere corrupti necessitatibus non! Adipisci quibusdam vero asperiores eos fugiat?
-              </p>
-          </div>
-        </div>
+            <div className={sty.home}>
+   
+      <div class={sty.home_content}>
 
-        <div>
-        <h1 className={stylec.text}> Our Events</h1>
-         {/* <div className={stylec.eventcontainer}></div> */}
-            <div className={stylec.cardcontainer}>
-            <div class="card text-bg-dark  mb-3" style={{maxWidth:'650px'}}>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src={spc} class="card-img-top img-fluid mx-auto h-100 rounded" alt="..."/>
-                </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
+          <div class={sty.container}>
+
+              <div class={sty.row}>
+
+                <div class="col-xs-12 col-md-6 col-md-offset-3">
+
+                      
+                      <div class={sty.home_semicircle_outer}>
+
+                         
+                          <div class={sty.home_semicircle_inner}>
+
+                          </div>
+
+                          <div id={sty.home_semicircle_pointer}></div>
+
+                          <nav>
+                            <ul class="cl_effect_15">
+                            <li className={activeBlock === 'on' ? 'first-position active' : 'first-position'}>
+                <a href="#" data-hover="On" onClick={() => handleClick('on')}>
+                  On
+                </a>
+              </li>
+              <li className={activeBlock === 'on' ? 'first-position active' : 'first-position'}>
+                <a href="#" data-hover="On" onClick={() => handleClick('on')}>
+                  On
+                </a>
+              </li>
+              <li className={activeBlock === 'on' ? 'first-position active' : 'first-position'}>
+                <a href="#" data-hover="On" onClick={() => handleClick('on')}>
+                  On
+                </a>
+              </li>
+              <li className={activeBlock === 'on' ? 'first-position active' : 'first-position'}>
+                <a href="#" data-hover="On" onClick={() => handleClick('on')}>
+                  On
+                </a>
+              </li>
+              <li className={activeBlock === 'on' ? 'first-position active' : 'first-position'}>
+                <a href="#" data-hover="On" onClick={() => handleClick('on')}>
+                  On
+                </a>
+              </li>
+                            </ul>
+                          </nav>
+
+                      </div>
+
+                      <div class={sty.home_logo}>
+                        <h1><a href="http://miukimiu.com">Miuki Miu</a></h1>
+                      </div>
+
+                  </div>
+
               </div>
+
             </div>
-          </div>
-          <div class="card text-bg-dark mb-3" style={{maxWidth:'650px'}}>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src={stc} class="card-img-top img-fluid mx-auto h-100 rounded" alt="..."/>
+
+            <div class={sty.home_info_outer}>
+
+              <div class={sty.container}>
+
+                <div class={sty.row}>
+
+                  <div class="col-md-12">
+
+                      <div class={sty.home_info}>
+
+                        <div class={`${sty.home_info_block} ${sty.on}` } >
+
+                          <h1>Yeah! Nice to meet you</h1>
+                          <h2>I'm just a friendly girl who loves to create beautiful websites!</h2>
+
+                        </div>
+
+
+                        <div class={`${sty.home_info_block} ${sty.we}` }>
+
+                          <h1>Webdesign</h1>
+                          <h2>I'm just a friendly girl who loves to create beautiful websites!</h2>
+
+                        </div>
+
+
+                        <div class={`${sty.home_info_block} ${sty.wd}` }>
+
+                          <h1>Wordpress Development</h1>
+                          <h2>I'm just a friendly girl who loves to create beautiful websites!</h2>
+
+                        </div>
+
+
+                        <div class={`${sty.home_info_block} ${sty.fe}` }>
+
+                          <h1>Front-end</h1>
+                          <h2>Css, html and jQuery! </h2>
+                        </div>
+
+                        <div class={`${sty.home_info_block} ${sty.off}` }>
+
+                          <h1>When I'm offline</h1>
+                          <h2>I love to produce electronic music, take photos, travel, go out with my friends and be happy! !</h2>
+
+                        </div>
+
+                      </div>
+                       
+                  </div>
+
                 </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
+                    
               </div>
+
             </div>
-          </div>
-          <div class="card text-bg-dark mb-3" style={{maxWidth:'650px'}}>
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img src={spc} class="card-img-top img-fluid mx-auto h-100 rounded" alt="..."/>
-                </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                   <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-            </div>
-        </div>
+        
+      </div>
 
-        <div>
-          <h3 className='mt-5'>Meet Our Team</h3>
-          <div class="teamcontainer mt-5">
-           <img src={spc} alt="..." class="rounded_image" style={{borderColor:'black'}}/>
-           <img src={spc} alt="..." class="rounded_image"/>
-           <img src={spc} alt="..." class="rounded_image"/>
-          </div>
-
-
-
-        </div>
-      
     </div>
-  )
+    
+        </div>
+    )
 }
 
-export default club
+export default Club
+
+
+// import React, { useState } from 'react';
+// import './HomePage.css'; // You can define your CSS styles here
+
+// function HomePage() {
+  
+//   return (
+//     <header id="home">
+//       <div className="home-content">
+//         <div className="container">
+//           {/* ...other HTML code */}
+//           <nav>
+//             <ul className="cl-effect-15">
+//               <li className={activeBlock === 'on' ? 'first-position active' : 'first-position'}>
+//                 <a href="#" data-hover="On" onClick={() => handleClick('on')}>
+//                   On
+//                 </a>
+//               </li>
+//               {/* ...repeat for other sections */}
+//             </ul>
+//           </nav>
+//           {/* ...other HTML code */}
+//         </div>
+//         {/* ...other HTML code */}
+//       </div>
+//     </header>
+//   );
+// }
+
+// export default HomePage;

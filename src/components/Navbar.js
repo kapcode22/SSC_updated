@@ -23,9 +23,13 @@ const Navbar = () => {
         <li className="nav-item">
           <a className="nav-link" href="/event">Events</a>
         </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/club">Clubs</a>
+        </li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Clubs 
+          <a class="nav-link dropdown-toggle" href="/none" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           our clubs
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/spc">Social Project Club</a></li>
