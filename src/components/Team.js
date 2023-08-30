@@ -26,13 +26,13 @@ const Team = () => {
             </div>
             <div className={tstyle.text1}>
 
-              <a href="http://www.facebook.com/" target="_blank">
+              <a href="http://www.facebook.com/" target="_blank" rel="noreferrer">
                 <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" />
               </a>
-              <a href="http://www.instagram.com/" target="_blank">
+              <a href="http://www.instagram.com/" target="_blank" rel="noreferrer">
                 <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
               </a>
-              <a href="http://www.gmail.com/" target="_blank">
+              <a href="http://www.gmail.com/" target="_blank" rel="noreferrer">
                 <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
               </a>
             </div>
@@ -58,13 +58,13 @@ const Team = () => {
               </div>
               <div className={tstyle.text1}>
 
-                <a href="http://www.facebook.com/" target="_blank">
+                <a href="http://www.facebook.com/" target="_blank" rel="noreferrer">
                   <img alt="..." src="https://cdn-icons-png.flaticon.com/128/3128/3128219.png" />
                 </a>
-                <a href="https://www.instagram.com/0903_divya/" target="_blank">
+                <a href="https://www.instagram.com/0903_divya/" target="_blank" rel="noreferrer">
                   <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
                 </a>
-                <a href="http://www.gmail.com/" target="_blank">
+                <a href="http://www.gmail.com/" target="_blank" rel="noreferrer">
                   <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
                 </a>
               </div>
@@ -84,13 +84,13 @@ const Team = () => {
             </div>
             <div>
 
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer">
               <img src={linkedin} alt="LinkedIn" />
             </a>
-              <a href="https://www.instagram.com/abhishekanand1245/" target="_blank">
+              <a href="https://www.instagram.com/abhishekanand1245/" target="_blank" rel="noreferrer">
                 <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
               </a>
-              <a href="http://www.gmail.com/" target="_blank">
+              <a href="http://www.gmail.com/" target="_blank" rel="noreferrer">
                 <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
               </a>
             </div>
@@ -106,10 +106,10 @@ const Team = () => {
             </div>
             <div>
             <div class={tstyle.social}>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class={tstyle.social}>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer" class={tstyle.social}>
               <img src={linkedin} alt="LinkedIn" />
             </a>
-            <a href="https://www.instagram.com/your-profile" target="_blank">
+            <a href="https://www.instagram.com/your-profile" target="_blank" rel="noreferrer">
               <img src={instagram} alt="Instagram" />
             </a>
             <a href="mailto:your.email@example.com">

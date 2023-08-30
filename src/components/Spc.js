@@ -1,5 +1,6 @@
 import React from "react";
 import stylec from "./spc.module.css";
+import Projects from "./Projects";
 import spc from "../images/spc.jpg";
 import stc from "../images/stc.jpeg";
 
@@ -133,7 +134,11 @@ const club = () => {
                     </div>
                 </div>
             </div>
-
+            <div>
+                <h1>Social Projects</h1>
+                <div>Add Social Projects</div>
+                <Projects/>
+            </div>
             <div>
                 <h3 className="mt-5">Meet Our Team</h3>
                 <div class="teamcontainer mt-5">
