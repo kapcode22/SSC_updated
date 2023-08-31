@@ -25,15 +25,6 @@ const Team = () => {
               <p className={tstyle.text1}>Counsellor</p>
             </div>
             <div className={tstyle.social}>
-
-              <a href="http://www.facebook.com/" target="_blank">
-                <img alt="..." src={facebook} />
-              </a>
-              <a href="http://www.instagram.com/" target="_blank">
-                <img alt="..." src={instagram} />
-              </a>
-              <a href="http://www.gmail.com/" target="_blank">
-                <img alt="..." src={mail} />
               </a>
             </div>
           </div>
@@ -57,15 +48,6 @@ const Team = () => {
                 <p className={tstyle.text1}>Jt. General Secretary</p>
               </div>
               <div className={tstyle.social}>
-
-                <a href="http://www.linkedin.com/" target="_blank">
-                  <img alt="..." src={linkedin} />
-                </a>
-                <a href="https://www.instagram.com/0903_divya/" target="_blank">
-                  <img alt="..." src={instagram} />
-                </a>
-                <a href="http://www.gmail.com/" target="_blank">
-                  <img alt="..." src={mail} />
                 </a>
               </div>
             </div>
@@ -83,15 +65,6 @@ const Team = () => {
               <p className={tstyle.text1}>General Secretary</p>
             </div>
             <div className={tstyle.social}>
-
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
-              <img alt="..." src={linkedin} />
-            </a>
-              <a href="https://www.instagram.com/abhishekanand1245/" target="_blank">
-                <img alt="..." src={instagram} />
-              </a>
-              <a href="http://www.gmail.com/" target="_blank">
-                <img alt="..." src={mail} />
               </a>
             </div>
 
@@ -106,11 +79,6 @@ const Team = () => {
             </div>
             <div>
             <div class={tstyle.social}>
-            <a href="https://www.linkedin.com/in/your-profile" target="_blank" class={tstyle.social}>
-              <img alt="..." src={linkedin} />
-            </a>
-            <a href="https://www.instagram.com/your-profile" target="_blank">
-              <img alt="..." src={instagram} />
             </a>
             <a href="mailto:your.email@example.com">
               <img alt="..." src={mail} />
