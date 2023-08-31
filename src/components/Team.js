@@ -1,10 +1,13 @@
 import React from 'react'
-import first from "../images/counsellor.jpeg"
+import first from "../images/counsellor.jpg"
 import amit from "../images/amit.png"
 import tstyle from "./Teams.module.css"
-import linkedin from '../images/linkedin.png'
-import mail from '../images/mail.png'
-import instagram from '../images/instagram.png'
+import linkedin from '../images/Icons/linkedin.png'
+import mail from '../images/Icons/email.png'
+import instagram from '../images/Icons/instagram.png'
+import facebook from '../images/Icons/facebook.png'
+
+
 const Team = () => {
   return (
     <div className={`${tstyle.body}`}>
@@ -12,9 +15,6 @@ const Team = () => {
         <h1 style={{ color: 'white' }}> <ul>MEET OUR TEAM :</ul></h1>
         <h3 style={{ color: 'white' }}>The Faces Behind Social Service Council </h3>
       </div>
-
-
-
 
       <div class="row cols-md-12 g-4 align-items-center justify-content-md-center">
         <div className="col-md-4 mt-5">
@@ -24,16 +24,16 @@ const Team = () => {
               <h5 className={tstyle.text1}>Dr. SUKHADA</h5>
               <p className={tstyle.text1}>Counsellor</p>
             </div>
-            <div className={tstyle.text1}>
+            <div className={tstyle.social}>
 
               <a href="http://www.facebook.com/" target="_blank">
-                <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" />
+                <img alt="..." src={facebook} />
               </a>
               <a href="http://www.instagram.com/" target="_blank">
-                <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
+                <img alt="..." src={instagram} />
               </a>
               <a href="http://www.gmail.com/" target="_blank">
-                <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
+                <img alt="..." src={mail} />
               </a>
             </div>
           </div>
@@ -56,16 +56,16 @@ const Team = () => {
                 <h5 className={tstyle.text1}>DIVYA TIWARI</h5>
                 <p className={tstyle.text1}>Jt. General Secretary</p>
               </div>
-              <div className={tstyle.text1}>
+              <div className={tstyle.social}>
 
-                <a href="http://www.facebook.com/" target="_blank">
-                  <img alt="..." src="https://cdn-icons-png.flaticon.com/128/3128/3128219.png" />
+                <a href="http://www.linkedin.com/" target="_blank">
+                  <img alt="..." src={linkedin} />
                 </a>
                 <a href="https://www.instagram.com/0903_divya/" target="_blank">
-                  <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
+                  <img alt="..." src={instagram} />
                 </a>
                 <a href="http://www.gmail.com/" target="_blank">
-                  <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
+                  <img alt="..." src={mail} />
                 </a>
               </div>
             </div>
@@ -82,16 +82,16 @@ const Team = () => {
               <h5 className={tstyle.text1}>ABHISHEK ANAND</h5>
               <p className={tstyle.text1}>General Secretary</p>
             </div>
-            <div>
+            <div className={tstyle.social}>
 
             <a href="https://www.linkedin.com/in/your-profile" target="_blank">
-              <img src={linkedin} alt="LinkedIn" />
+              <img alt="..." src={linkedin} />
             </a>
               <a href="https://www.instagram.com/abhishekanand1245/" target="_blank">
-                <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
+                <img alt="..." src={instagram} />
               </a>
               <a href="http://www.gmail.com/" target="_blank">
-                <img alt="..." src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
+                <img alt="..." src={mail} />
               </a>
             </div>
 
@@ -107,13 +107,13 @@ const Team = () => {
             <div>
             <div class={tstyle.social}>
             <a href="https://www.linkedin.com/in/your-profile" target="_blank" class={tstyle.social}>
-              <img src={linkedin} alt="LinkedIn" />
+              <img alt="..." src={linkedin} />
             </a>
             <a href="https://www.instagram.com/your-profile" target="_blank">
-              <img src={instagram} alt="Instagram" />
+              <img alt="..." src={instagram} />
             </a>
             <a href="mailto:your.email@example.com">
-              <img src={mail} alt="Email" />
+              <img alt="..." src={mail} />
             </a>
           </div>
 
