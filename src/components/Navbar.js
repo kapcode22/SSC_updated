@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NavBar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../images/logo.png"
+import SSC from "../images/SSC.png"
 import "./Home.css";
 import { AiOutlineUser } from "react-icons/ai"
 
@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <Container style={{ paddingTop: '10px' }}>
         <NavBar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={SSC} className="img-fluid logo" alt="brand" />
         </NavBar.Brand>
         <NavBar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -64,7 +64,7 @@ const Navbar = () => {
                 href="/event"
                 onClick={() => updateExpanded(false)}
               >
-                Event
+                About US
               </Nav.Link>
             </Nav.Item>
 

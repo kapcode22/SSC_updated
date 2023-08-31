@@ -1,153 +1,156 @@
 import React from "react";
-import stylec from "./spc.module.css";
-import spc from "../images/spc.jpg";
-import stc from "../images/stc.jpeg";
+import styles from "./spc.module.css";
+import Projects from "./Projects";
+import header from '../images/header_background.JPG'
+import spc from '../images/spc.jpg'
+import anupama from '../images/anupama_ku.jpg'
+import vivek_ku from '../images/vivek_ku.png'
+import ku2 from '../images/ku2.jpg'
+import ku3 from '../images/ku3.jpg'
+import ku4 from '../images/ku4.jpg'
+import mail from '../images/mail.png'
+import linkdin from '../images/linkedin.png'
+import insta from '../images/instagram.png'
+
 
 const club = () => {
     return (
-        <div>
-            <div className={stylec.image_container}>
-                {/* <img  src={image1} alt='...'></img> */}
-                <h3 className={stylec.h3}>Social Project Club</h3>
-            </div>
-
-            <div>
-                <h1 className={stylec.text}> About us</h1>
-            </div>
-
-            <div className={stylec.midcontainer}>
-                
-                <div className="column">
-                    <img src={spc} alt="..."></img>
+        
+            <div className={styles.bodies}>
+            <div className={`${styles.carousel_container} `}>
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src={ku2} class={styles.carousel_img} alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src={ku3} class={styles.carousel_img} alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src={ku4} class={styles.carousel_img} alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div className="column mt-5 mx-5">
-                    <p>
-                        Social projects club , is a group of innovative young individuals
-                        operating in collaboration with the Social Service Council of IIT
-                        (BHU), Varanasi. We address a range of societal concerns, employing
-                        our technical expertise, meticulous planning, and strategic thinking
-                        to devise innovative solutions. As a united team, we've embraced the
-                        task of empowering society through simple and impactful approaches.
-                        The "Social Projects Club" aims to make a meaningful impact on
-                        society by employing dedicated and systematic approaches to explore
-                        various underlying factors contributing to societal decline. Through
-                        this diligent process, the club strives to identify distinct causes
-                        for these issues and subsequently devises comprehensive strategies
-                        to address them effectively, leading to meaningful solutions.
+
+            </div>
+
+            <h3 className={styles.h3}>Social Project Club</h3>
+            <div className={`${styles.about} ${styles.container}`}>
+                <img src={spc} alt="" />
+                <div className={styles.aboutContent}>
+                    <h3>About Us</h3>
+                    <p className={styles.dis}>Kashi Utkarsh, is an initiative led by the IIT BHU students to relieve the challenges faced by underprivileged individuals in areas like Patiya, Kakarmatta, and Lahartara. Centered on improved hygiene and  importance of education, the initiative aims to enhance the standard of living and awareness among the less fortunate.  Through individual engagement, free medical camps, and awareness campaigns,we strive to address their unique needs and nurture positive transformation within these communities.
                     </p>
+                    <button className={`${styles.btn} ${styles.btnSecondary}`}>View Details</button>
                 </div>
             </div>
 
-            <div>
-                <h1 className={stylec.text}> Our Events</h1>
-                {/* <div className={stylec.eventcontainer}></div> */}
-                <div className={stylec.cardcontainer}>
-                    <div class="card text-bg-dark  mb-3" style={{ maxWidth: "650px" }}>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img
-                                    src={spc}
-                                    class="card-img-top img-fluid mx-auto h-100 rounded"
-                                    alt="..."
-                                />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Abhipraya</h5>
-                                    <p class="card-text">
-                                        It is a case study event exclusively for the freshers.It
-                                        aims to engage freshers in studying social problems,
-                                        presenting ideas, and learning various skills. For guidance
-                                        and support , Personal mentors to every team are provided to
-                                        help their mentees to move in the proper thought process and
-                                        clear every doubt they get throughout their
-                                        journey—𝐀𝐛𝐡𝐢𝐩𝐫𝐚𝐲𝐚 comprised of two rounds: the abstract
-                                        submission round and the PPT presentation round.
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+            <div className={styles.eventsBack}></div>
+            <div className={`${styles.events} ${styles.container}`}>
+                <h2>Our Events</h2>
+                <div className={styles.event}>
+                    <div className={styles.eventContent}>
+                        <h3>AbhiPraya</h3>
+                        <p>
+                            'Sangharsh: An Inter-Basti Sports Event' was organized on 15th January 2023 inKakarmatta Basti by Kashi Utkarsh, affiliated with IIT BHU.
+                        </p>
+                        <p>The event’s objective was to cultivate sports interest in children with their academic goals .It aimed to nurture sportsmanship values, offer a platform for showcasing talent, introduce kids to diverse games, and promote awareness about the significance of physical activities in daily routines.</p>
                     </div>
-                    <div class="card text-bg-dark mb-3" style={{ maxWidth: "650px" }}>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img
-                                    src={stc}
-                                    class="card-img-top img-fluid mx-auto h-100 rounded"
-                                    alt="..."
-                                />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Brainstorming session </h5>
-                                    <p class="card-text">
-                                        The session is held bi annually where new social issues are
-                                        addressed, and the solution presented by the students is
-                                        critically analyzed. Here, Students pitch their ideas,
-                                        brainstorm with attendees and judges, and team up with
-                                        interested people, to make progress in the project.
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <img src={header} alt="" />
+                    <div className={styles.date}></div>
+                </div>
+                <div className={styles.event}>
+                    <div className={styles.eventContent}>
+                        <h3>Brain Storming session</h3>
+                        <p className={styles.dis}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste magnam temporibus eligendi quod sequi aliquam autem accusantium quam. Magni labore autem quisquam molestias error? Odit et maiores unde porro.</p>
                     </div>
-                    <div class="card text-bg-dark mb-3" style={{ maxWidth: "650px" }}>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img
-                                    src={spc}
-                                    class="card-img-top img-fluid mx-auto h-100 rounded"
-                                    alt="..."
-                                />
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Social Innovation Challenge</h5>
-                                    <p class="card-text">
-                                        It focussed on presenting policy based or technical
-                                        solutions to social issues posed by NGOs. Evaluation
-                                        criteria included impact, pragmatism, progress, and
-                                        scalability. The competition had two rounds: abstract
-                                        submission and presentations before judges. Workshops were
-                                        held to help the participants think critically and
-                                        creatively
-                                    </p>
-                                    <p class="card-text">
-                                        <small class="text-body-secondary">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <img src={header} alt="" />
+                    <div className={styles.date}></div>
+                </div>
+                <div className={styles.event}>
+                    <div className={styles.eventContent}>
+                        <h3>Social Innovation Challenge</h3>
+                        <p className={styles.dis}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste magnam temporibus eligendi quod sequi aliquam autem accusantium quam. Magni labore autem quisquam molestias error? Odit et maiores unde porro.</p>
                     </div>
+                    <img src={header} alt="" />
+                    <div className={styles.date}></div>
                 </div>
             </div>
-
             <div>
+                <div>Add your Social Project</div>
+                <Projects/>
+            </div>
+
+
+            <div >
                 <h3 className="mt-5">Meet Our Team</h3>
-                <div class="teamcontainer mt-5">
-                    <img
-                        src={spc}
-                        alt="..."
-                        class="rounded_image"
-                        style={{ borderColor: "black" }}
-                    />
-                    <img src={spc} alt="..." class="rounded_image" />
-                    <img src={spc} alt="..." class="rounded_image" />
+               
+                <div className={styles.card_body}>
+
+                    <div className={styles.card}>
+                        <img src={anupama} alt="Image 1" />
+                        <h4>Anupama</h4>
+                        <h5>Jt. general Secy</h5>
+                        <div class={styles.logo_row}>
+                            <div class={styles.logo_container}>
+                                <img src={insta} alt="Instagram Logo" />
+                            </div>
+                            <div class={styles.logo_container}>
+                                <img src={mail} alt="Instagram Logo" />
+                            </div>
+                            <div class={styles.logo_container}>
+                                <img src={linkdin} alt="Instagram Logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.card}>
+                        <img src={vivek_ku} alt="Image 2" />
+                        <h4>Vivek kumar</h4>
+                        <h5> General Secy</h5>
+                        <div class={styles.logo_row}>
+                            <div class={styles.logo_container}>
+                                <img src={insta} alt="Instagram Logo" />
+                            </div>
+                            <div class={styles.logo_container}>
+                                <img src={mail} alt="Instagram Logo" />
+                            </div>
+                            <div class={styles.logo_container}>
+                                <img src={linkdin} alt="Instagram Logo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.card}>
+                        <img src={vivek_ku} alt="Image 3" />
+                        <h4>Jatin kumar Goyal</h4>
+                        <h5>Jt. general Secy</h5>
+                        <div class={styles.logo_row}>
+                            <div class={styles.logo_container}>
+                                <img src={insta} alt="Instagram Logo" />
+                            </div>
+                            <div class={styles.logo_container}>
+                                <img src={mail} alt="Instagram Logo" />
+                            </div>
+                            <div class={styles.logo_container}>
+                                <img src={linkdin} alt="Instagram Logo" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
+
         </div>
+
+ 
     );
 };
 

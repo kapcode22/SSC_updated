@@ -8,6 +8,7 @@ import pfc from "../images/pfc.png"
 import ummed from "../images/ummed.png"
 import pregrad from "../images/pregrad.png"
 import lwt from "../images/lwt.png"
+import SSC from "../images/SSC.png"
 
 function Events() {
     return (
@@ -15,6 +16,26 @@ function Events() {
             <div className={styles.bodies}>
              <div className={styles.middle}>
                 <section className={styles.about}>
+                    
+                <div className={styles.container}>
+                        <div className={styles.img2}>
+                            <img className={styles.logo} src={SSC} alt="jagriti-img" />
+                        </div>
+                        <div className={styles.para}>
+                            <h1 className="heading pb-3"><strong>About US</strong></h1>
+                            <p >
+                                <div className={styles.text}>
+                                Jagriti is an enlightening and edifying annual social service fest concentrated primarily on raising
+                                awareness through an assortment of educative and profound thinking events.
+                                We conduct an array of events circulating the theme of social issues.
+                                Jagriti is on way to self-contentment wherein we help the underprivileged, borrowing time and drawing attention from our surplus lives.
+                                </div>
+                              
+                            </p>
+                          
+                            <div className={styles.contain}><button type="button" className="btn btn-primary btn-lg btn-success opacity-75">Explore Now</button></div>
+                        </div>
+                    </div>
 
                     <div className={styles.container}>
                         <div className={styles.img}>

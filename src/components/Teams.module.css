@@ -1,8 +1,20 @@
 
 .body{
-  background-color: #800080;
+  background: linear-gradient(-45deg, #400281, #340155, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
 }
-
+@keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
 .container {
   margin-top: 3%;
   display: flex;
@@ -11,81 +23,71 @@
  
 }
 
-.image_card {
-  padding-top: 50%;
+
+
+
+
+
+
+
+.card_body {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+ 
+  margin: 0;
+
 }
 
-.avatar {
-  display: flex;
-  justify-content: center;
+.card {
+  margin-top: 5%;
+  height: 80%;
+  width: 20%;
+  text-align: center;
+  border-radius: 10px;
+ 
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 50%;
   width: 250px;
   height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
- 
-}
-
-.avatar img {
-  
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.content {
-  align-items: center;
-  position: relative;
-  align-content: center;
-  margin-top: 5%;
-  flex: 1;
-}
-
-h2 {
+.card p {
   margin: 0;
-  font-size: 1.2rem;
-  color: #333;
 }
 
-p {
-  margin: 8px 0;
-  color: #666;
+.card a {
+  color: #3498db;
+  text-decoration: none;
 }
 
-.image_row1 {
+.text1{
+  color: antiquewhite;
+  align-items: center;
+}
+
+
+.logo_row {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.image_row2 {
-  display: flex;
-  justify-content: space-between;
+.logo_container {
+  color: antiquewhite;
+  padding: auto;
+  text-align: center;
+}
+
+.logo_container img {
+  max-width: 20px; /* Adjust the size as needed */
+  height: 20px;
  
 }
 
-
-.card1{
-  margin-top: 10px;
-  padding-left: 133px;
-}
-.text1{
-  font-size: larger;
-  color: whitesmoke;
-}
-
-.social {
-  display: flex;
-  gap: 20px;
-}
-
-.social a img {
-  width: 30px;
-  height: 30px;
-}
