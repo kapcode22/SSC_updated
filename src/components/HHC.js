@@ -4,9 +4,9 @@ import header from '../images/header_background.JPG'
 import stc from '../images/stc.jpeg'
 import sameer from '../images/Sameer.jpg'
 import rit from '../images/Ritwij.jpg'
-import ku2 from '../images/ku2.jpg'
-import ku3 from '../images/ku3.jpg'
-import ku4 from '../images/ku4.jpg'
+import HHC2 from '../images/HHC_1.jpg'
+import HHC3 from '../images/HHC_2.jpg'
+import HHC4 from '../images/HHC3.jpg'
 import mail from '../images/mail.png'
 import linkdin from '../images/linkedin.png'
 import insta from '../images/instagram.png'
@@ -18,13 +18,13 @@ const Ku = () => {
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src={ku2} class={styles.carousel_img} alt="..." />
+                            <img src={HHC2} class={styles.carousel_img} alt="..." />
                         </div>
                         <div class="carousel-item">
-                            <img src={ku3} class={styles.carousel_img} alt="..." />
+                            <img src={HHC3} class={styles.carousel_img} alt="..." />
                         </div>
                         <div class="carousel-item">
-                            <img src={ku4} class={styles.carousel_img} alt="..." />
+                            <img src={HHC4} class={styles.carousel_img} alt="..." />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -62,7 +62,7 @@ const Ku = () => {
                         <p>
                         “Spot the Green” was an initiative Organized by the Health and Hygiene Club with the goal of advocating for tree plantation drives and enhancing awareness regarding the significance of lush green spaces.
                         </p>
-                        <p>The event included educational sessions on tree benefits like air purification and wildlife habitat. Hands-on tree planting lets participants contribute and learn techniques. "Spot the Green" competition encouraged exploring tree species in an area.</p>
+                        <p>The event included educational sessions on tree benefits like air purification and wildlife habitat. Hands-on tree planting lets participants contribute and learn techniques. </p>
                     </div>
                     <img src={header} alt="" />
                     <div className={styles.date}></div>
@@ -78,7 +78,8 @@ const Ku = () => {
                 <div className={styles.event}>
                     <div className={styles.eventContent}>
                         <h3>Medicine Drive</h3>
-                        <p className={styles.dis}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste magnam temporibus eligendi quod sequi aliquam autem accusantium quam. Magni labore autem quisquam molestias error? Odit et maiores unde porro.</p>
+                        <p className={styles.dis}>The main objective of the drive was to encourage students to contribute to the cause of improving healthcare accessibility by donating unused or spare medicines that were in good condition and within their expiration dates.
+                         By collecting medicines from the students, the Health and Hygiene Club sought to build a pool of resources that could be utilized to support healthcare initiatives.</p>
                     </div>
                     <img src={header} alt="" />
                     <div className={styles.date}></div>
@@ -154,42 +155,3 @@ const Ku = () => {
 
 export default Ku
 
-
-{/* <div className={styles.teamBack}>
-<div className={`${styles.team} ${styles.container}`}>
-    <p>OUR TEAM</p>
-    <h2>Meet our Volunteers</h2>
-    <div className={styles.members}>
-        <div className={styles.member}>
-            <img src={anupama} alt="" />
-            <div className={styles.details}>
-                <h3>Anupama</h3>
-                <p>Jt. General Secretary</p>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-            </div>
-        </div>
-        <div className={styles.member}>
-            <img src={vivek_ku} alt="" />
-            <div className={styles.details}>
-                <h3>Vivek Kumar</h3>
-                <p>General Secretary</p>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-            </div>
-        </div>
-        <div className={styles.member}>
-            <img src={header} alt="" />
-            <div className={styles.details}>
-                <h3>Jatin Goyal</h3>
-                <p>Jt. General Secretary</p>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> */}

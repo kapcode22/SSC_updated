@@ -1,5 +1,5 @@
 
-.body{
+/* .body{
   background: linear-gradient(-45deg, #400281, #340155, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
@@ -14,19 +14,15 @@
 	100% {
 	  background-position: 0% 50%;
 	}
-  }
+  } */
+  
 .container {
-  margin-top: 3%;
+  margin-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
  
 }
-
-
-
-
-
 
 
 

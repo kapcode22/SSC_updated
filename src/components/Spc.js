@@ -11,6 +11,9 @@ import ku4 from '../images/ku4.jpg'
 import mail from '../images/mail.png'
 import linkdin from '../images/linkedin.png'
 import insta from '../images/instagram.png'
+import ayush from '../images/Ayush.png'
+import kapil from '../images/kapil.jpg'
+import mith from '../images/mithilesh.jpg'
 
 
 const club = () => {
@@ -96,8 +99,8 @@ const club = () => {
                 <div className={styles.card_body}>
 
                     <div className={styles.card}>
-                        <img src={anupama} alt="Image 1" />
-                        <h4>Anupama</h4>
+                        <img src={ayush} alt="Image 1" />
+                        <h4>Ayush Sarangi</h4>
                         <h5>Jt. general Secy</h5>
                         <div class={styles.logo_row}>
                             <div class={styles.logo_container}>
@@ -112,8 +115,8 @@ const club = () => {
                         </div>
                     </div>
                     <div className={styles.card}>
-                        <img src={vivek_ku} alt="Image 2" />
-                        <h4>Vivek kumar</h4>
+                        <img src={mith} alt="Image 2" />
+                        <h4>Mithilesh</h4>
                         <h5> General Secy</h5>
                         <div class={styles.logo_row}>
                             <div class={styles.logo_container}>
@@ -128,8 +131,8 @@ const club = () => {
                         </div>
                     </div>
                     <div className={styles.card}>
-                        <img src={vivek_ku} alt="Image 3" />
-                        <h4>Jatin kumar Goyal</h4>
+                        <img src={kapil} alt="Image 3" />
+                        <h4>kapil Rahngdale</h4>
                         <h5>Jt. general Secy</h5>
                         <div class={styles.logo_row}>
                             <div class={styles.logo_container}>

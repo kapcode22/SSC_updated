@@ -1,16 +1,17 @@
 import React from 'react'
-import first from "../images/counsellor.jpeg"
+import coun from "../images/counselor.jpg"
 import amit from "../images/amit.png"
 import tstyle from "./Teams.module.css"
 import linkdin from '../images/linkedin.png'
 import mail from '../images/mail.png'
 import insta from '../images/instagram.png'
+import divya from '../images/divya.jpg'
+import abhi from '../images/abhishek.png'
 const Team = () => {
   return (
-    <div className={`${tstyle.body}`}>
-      <div className='pt-3'>
+    <div className={tstyle.body} >
+      <div className={tstyle.container}>
         <h1 style={{ color: 'white' }}> <ul>MEET OUR TEAM :</ul></h1>
-        <h3 style={{ color: 'white' }}>The Faces Behind Social Service Council </h3>
       </div>
 
 
@@ -20,7 +21,7 @@ const Team = () => {
         <div className="col-md-4 mt-5">
           <div className={tstyle.card_body}>
             <div className={tstyle.card}>
-              <img src={amit} alt="Image 1" />
+              <img src={coun} alt="Image 1" />
               <h4 style={{color:'aliceblue'}}>Dr. Sukhada</h4>
               <h5 style={{color:'aliceblue'}}>Counsellor</h5>
               <div class={tstyle.logo_row}>
@@ -43,7 +44,7 @@ const Team = () => {
       <div className={tstyle.card_body}>
 
         <div className={tstyle.card}>
-          <img src={amit} alt="Image 1" />
+          <img src={divya} alt="Image 2" />
           <h4 style={{color:'aliceblue'}}>Divya Tiwari</h4>
           <h5 style={{color:'aliceblue'}}>Jt. general Secy</h5>
           <div class={tstyle.logo_row}>
@@ -59,7 +60,7 @@ const Team = () => {
           </div>
         </div>
         <div className={tstyle.card}>
-          <img src={amit} alt="Image 2" />
+          <img src={abhi} alt="Image 2" />
           <h4 style={{color:'aliceblue'}}>Abhishek Anand</h4>
           <h5 style={{color:'aliceblue'}}> General Secy</h5>
           <div class={tstyle.logo_row}>
