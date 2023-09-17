@@ -1,31 +1,30 @@
 import React from 'react'
 import styles from './ku.module.css'
 import header from '../images/header_background.JPG'
-import stc from '../images/stc.jpeg'
 import manu from '../images/Manu.jpg'
 import neetu from '../images/Neetu.jpg'
 import ankit from '../images/Ankit.jpeg'
-import ku2 from '../images/ku2.jpg'
-import ku3 from '../images/ku3.jpg'
-import ku4 from '../images/ku4.jpg'
+import sahyog2 from '../images/sahyog2.jpg'
+import sahyog3 from '../images/sahyog3.jpg'
+import sahtog4 from '../images/sahyog3.jpg'
 import mail from '../images/mail.png'
 import linkdin from '../images/linkedin.png'
 import insta from '../images/instagram.png'
 import sahyog from '../images/sahyog_logo.jpg'
-const Ku = () => {
+const Sahyog = () => {
   return (
     <div>
       <div className={`${styles.carousel_container} `}>
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src={ku2} class={styles.carousel_img} alt="..." />
+              <img src={sahyog2} class={styles.carousel_img} alt="..." />
             </div>
             <div class="carousel-item">
-              <img src={ku3} class={styles.carousel_img} alt="..." />
+              <img src={sahyog3} class={styles.carousel_img} alt="..." />
             </div>
             <div class="carousel-item">
-              <img src={ku4} class={styles.carousel_img} alt="..." />
+              <img src={sahtog4} class={styles.carousel_img} alt="..." />
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -81,8 +80,10 @@ const Ku = () => {
         </div>
         <div className={styles.event}>
           <div className={styles.eventContent}>
-            <h3>Sangyaan</h3>
-            <p className={styles.dis}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores iste magnam temporibus eligendi quod sequi aliquam autem accusantium quam. Magni labore autem quisquam molestias error? Odit et maiores unde porro.</p>
+            <h3>Sports Day</h3>
+            <p className={styles.dis}> Celebrated on Major Dhyan Chand's birthday (August 27th) in the school playgrounds.
+ Engaged students in a wide range of indoor and outdoor games, promoting physical fitness, teamwork, and sportsmanship.
+.The event created a lively and energetic atmosphere, fostering active participation and promoting the values of sportsmanship and physical well-being.</p>
           </div>
           <img src={header} alt="" />
           <div className={styles.date}></div>
@@ -92,11 +93,7 @@ const Ku = () => {
 
       <div >
         <h3 className="mt-5">Meet Our Team</h3>
-        {/* <div class="teamcontainer mt-5">
-                    <img src={spc} alt="..." class="rounded_image" style={{ borderColor: "black" }}/>
-                    <img src={spc} alt="..." class="rounded_image" />
-                    <img src={spc} alt="..." class="rounded_image" />
-                </div> */}
+      
         <div className={styles.card_body}>
 
           <div className={styles.card}>
@@ -156,44 +153,5 @@ const Ku = () => {
   )
 }
 
-export default Ku
+export default Sahyog
 
-
-{/* <div className={styles.teamBack}>
-<div className={`${styles.team} ${styles.container}`}>
-    <p>OUR TEAM</p>
-    <h2>Meet our Volunteers</h2>
-    <div className={styles.members}>
-        <div className={styles.member}>
-            <img src={anupama} alt="" />
-            <div className={styles.details}>
-                <h3>Anupama</h3>
-                <p>Jt. General Secretary</p>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-            </div>
-        </div>
-        <div className={styles.member}>
-            <img src={vivek_ku} alt="" />
-            <div className={styles.details}>
-                <h3>Vivek Kumar</h3>
-                <p>General Secretary</p>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-            </div>
-        </div>
-        <div className={styles.member}>
-            <img src={header} alt="" />
-            <div className={styles.details}>
-                <h3>Jatin Goyal</h3>
-                <p>Jt. General Secretary</p>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-                <div className={styles.icon}></div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> */}
