@@ -37,8 +37,8 @@
 
 .card {
   margin-top: 5%;
-  height: 80%;
-  width: 20%;
+  height: 40vw;
+  width: 30vw;
   text-align: center;
   border-radius: 10px;
  
@@ -46,10 +46,15 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+  margin-top: 2%;
+  transition-duration: 500ms;
+}
+
 .card img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 88%;
+  height: 66%;
   object-fit: cover;
   margin-bottom: 10px;
 }
@@ -84,6 +89,5 @@
 .logo_container img {
   max-width: 20px; /* Adjust the size as needed */
   height: 20px;
- 
 }
 

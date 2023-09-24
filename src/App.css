@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-body{
+body {
   background-color: #282c34;
 }
 
@@ -40,6 +40,6 @@ body{
   }
 }
 
-.color-nav{
-  background-color:  #e3f2fd;
+.color-nav {
+  background-color: #e3f2fd;
 }
