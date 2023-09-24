@@ -42,7 +42,7 @@ height: 100vh; */
 
 .carousel_container {
   width: 100%; /* Adjust as needed */
-  height: 50vh; /* Adjust as needed */
+  height: 33vw; /* Adjust as needed */
   overflow: hidden;
   position: relative;
   float: left;
@@ -55,24 +55,31 @@ height: 100vh; */
 
 .carousel_img {
   width: 100%;
-  height: 100%;
+  height: 33vw;
   object-fit: cover;
+  opacity: 0.5;
+  background-color: black;
 }
 
+.club_header {
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  z-index: 99;
+  color: whitesmoke;
+  margin-right: 2%;
+}
 
-
-
-
-  .h3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 10px;
-    color: white;
-    text-align: center;
-  }
+.h3 {
+  position: absolute;
+  top: 33vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
 
 a{
   text-decoration: none;
@@ -211,6 +218,7 @@ a{
   font-size: 1.8rem;
   margin-bottom: .8rem;
   margin-top: 4rem;
+  z-index: 9;
 }
 
 .events .event{
@@ -227,6 +235,7 @@ a{
   background: white;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
+  z-index: 9;
 }
 
 .eventContent h3{
@@ -258,7 +267,6 @@ a{
   /* transform: translate(-45%, 0); */
   position: absolute;
   left: -47%;
-  z-index: -1000;
 }
 
 
@@ -485,8 +493,8 @@ a{
 
 .card {
   margin-top: 5%;
-  height: 80%;
-  width: 20%;
+  height: 40vw;
+  width: 30vw;
   text-align: center;
   border-radius: 10px;
   background-color: #ffffff;
@@ -496,8 +504,8 @@ a{
 
 .card img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 88%;
+  height: 66%;
   object-fit: cover;
   margin-bottom: 10px;
 }
