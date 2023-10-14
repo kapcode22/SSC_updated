@@ -47,7 +47,16 @@ const Navbar = () => {
                 Home
               </Nav.Link>
             </Nav.Item>
+            
+            <Nav.Item>
+              <Nav.Link
 
+                href="/about"
+                onClick={() => updateExpanded(false)}
+              >
+                About US
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link
 
@@ -55,16 +64,6 @@ const Navbar = () => {
                 onClick={() => updateExpanded(false)}
               >
                 Team
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-
-                href="/event"
-                onClick={() => updateExpanded(false)}
-              >
-                About US
               </Nav.Link>
             </Nav.Item>
 

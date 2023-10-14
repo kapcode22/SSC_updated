@@ -1,59 +1,57 @@
 import React from "react";
-import homePic from "../images/homePic.png";
+import bg from "../images/bg.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type";
-import { AiFillInstagram, AiFillTwitterSquare } from "react-icons/ai";
-import { MdFacebook } from "react-icons/md";
+import { AiFillInstagram, AiFillLinkedin, AiFillMail,  } from "react-icons/ai";
+
 import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="home-section" id="home" >
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 className="heading">
-              Elevating Communities, Empowering Change: Student-Driven Social Service at IIT BHU
+              Elevating Communities, Empowering Change: Student-Driven Social Service by IIT BHU
               </h1>
               <div style={{ textAlign: "left", height: "80px" }}>
                 {" "}<Type />{" "}
               </div>
 
               <div className="home-btn">
-                <a href="/event" className="home-getStartBtn" style={{ color: "#fff" }} >
+                <a href="/About" className="home-getStartBtn" style={{ color: "#fff" }} >
                   Get Start
                 </a>
               </div>
 
-              <div className="bottom-text-home-btn">
-                Lorem ipsum dolor sit amet.
-              </div>
+             
 
               <ul className="homePage-icons">
                 <li className="social-icons">
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/company/ssc-iitbhu/"
                     style={{ color: "white" }}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <MdFacebook />
+                    <AiFillLinkedin />
                   </a>
                 </li>
                 <li className="social-icons">
                   <a
-                    href="/"
+                    href="mailto:gensec.ssc@itbhu.ac.in"
                     style={{ color: "white" }}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <AiFillTwitterSquare />
+                    <AiFillMail />
                   </a>
                 </li>
                 <li className="social-icons">
                   <a
-                    href="/"
+                    href="https://instagram.com/ssc.iitbhu?igshid=NzZlODBkYWE4Ng=="
                     style={{ color: "white" }}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -62,15 +60,6 @@ const Home = () => {
                   </a>
                 </li>
               </ul>
-            </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homePic}
-                alt="LOGO"
-                className="img-fluid"
-                style={{ maxHeight: "400px" }}
-              />
             </Col>
           </Row>
         </Container>
