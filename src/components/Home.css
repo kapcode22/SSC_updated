@@ -31,6 +31,7 @@
   }
   
   .navbar {
+    background-color: white;
     position: fixed !important;
     transition: all 0.3s ease-out 0s !important;
     padding: 0.3rem 2rem !important;
@@ -114,7 +115,7 @@
   }
   
   .navbar-nav .nav-link {
-    color: white !important;
+    color: rgb(0, 0, 0) !important;
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
@@ -132,7 +133,7 @@
   }
   
   .navbar-nav .nav-item a {
-    font-weight: 400;
+    font-weight: 700;
     transition: all 0.3s ease-out 0s;
     position: relative;
     z-index: 1;
@@ -171,27 +172,28 @@
   /* home section  */
  
   .home-header {
-    padding-top: 30px !important;
+    padding-top: 50px !important;
   }
   
   .home-section {
-    z-index: -1;
-    background:linear-gradient( #181b33, rgb(37, 37, 37) );
-    background-position: top center;
-    background-repeat: no-repeat;
+    
+    background-image: url("../images/bg.jpg");
+    background-position: cover;
+    min-height: 100%;
+    max-width: 100%;
+    background-size: cover;
     padding-bottom: 30px !important;
     padding-top: 30px !important;
   }
   
   .home-content {
-    padding: 7rem 0 2rem !important;
+    padding: 12rem 0 2rem !important;
     color: whitesmoke;
     text-align: left;
   }
   
   .heading {
     font-size: 2.4em !important;
-
   }
   
   .heading-name {
@@ -200,20 +202,19 @@
   }
   
   .home-btn{
-   
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 17px;
   }
   
-  .home-knowMoreBtn{
+  /* .home-knowMoreBtn{
     border: 1px solid #801f95;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 18px;
     border-radius: 18px;
     margin-right: 20px;
-  }
+  } */
 
   .home-getStartBtn{
     background-color: #801f95;
@@ -247,7 +248,6 @@
     font-weight: 600 !important;
   }
   .Typewriter__cursor {
-  
     font-size: 1.3em !important;
     color: #b562d6 !important;
   }
@@ -281,7 +281,7 @@
   
 
   .homePage-icons {
-    margin-top: 0.5em !important;
+    
     margin-bottom: 0.5em !important;
     padding: 0 !important;
   }

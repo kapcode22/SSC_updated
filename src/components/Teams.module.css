@@ -1,93 +1,160 @@
-
-/* .body{
-  background: linear-gradient(-45deg, #400281, #340155, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-}
-@keyframes gradient {
-	0% {
-	  background-position: 0% 50%;
-	}
-	50% {
-	  background-position: 100% 50%;
-	}
-	100% {
-	  background-position: 0% 50%;
-	}
-  } */
   
-.container {
-  margin-top: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .home_container{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .heading{
+    margin-top: 40%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+    margin-bottom: 10%;
+  }
+
+  .quote{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:cornflowerblue;
+    font-size: larger;
+    font-style: oblique;
+    /* text-decoration:underline;
+    animation: quote-underline 1s linear infinite;
+     */
+  }
+
+  
+  
+  
+    .row {
+      margin-bottom:5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    
+  .profile_card{
+    justify-content: space-around;
+      position: relative;
+      width: 220px;
+      height: 220px;
+      background-color: purple;
+      padding: 30px;
+      border-radius: 50%;
+      box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+      transition: all .4s;
+      margin: 0 20px;
+  }
+  .profile_card:hover{
+      border-radius: 10px;
+      height: 260px;
+  }
+  .profile_card .img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+  }
+  .profile_card:hover img{
+      border-radius: 10px;
+      transform: translateY(-70px);
+  }
+  .img img{
+      object-fit: fill;
+      width: 100%;
+      border-radius: 50%;
+      transition: all .4s;
+      z-index: 99;
+  }
+
+  .caption{
+      text-align: center;
+      transform: translateY(-90px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all .5s;
+  }
+  .profile_card:hover .caption{
+      opacity: 1;
+      pointer-events: all;
+  }
+  .caption h3{
+      font-size: 21px;
+      color: white;
+      font-weight: 600;
+  }
+  .caption p{
+      font-size: 15px;
+      font-weight: 500;
+      margin: 2px 0 12px 0;
+  }
+  .caption .social_links i{
+      font-size: 21px;
+      margin: 0 3px;
+      cursor: pointer;
+      color: #333;
+      transition: all .4s;
+  }
+  .caption .social_links i:hover{
+      color: #0c52a1;
+  }
+  .social_icons {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    border-radius: 50%;
+    
+  }
+  .social_icons :hover{
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 2px 10px #801f95;
+    border-radius: 50%;
+  }
+  
+
+  .homePage_icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5em !important;
+    padding: 0 !important;
+  }
  
-}
 
 
 
-.card_body {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
- 
-  margin: 0;
-
-}
-
-.card {
-  margin-top: 5%;
-  height: 40vw;
-  width: 30vw;
-  text-align: center;
-  border-radius: 10px;
- 
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.card:hover {
-  margin-top: 2%;
-  transition-duration: 500ms;
-}
-
-.card img {
-  border-radius: 50%;
-  width: 88%;
-  height: 66%;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.card p {
-  margin: 0;
-}
-
-.card a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.text1{
-  color: antiquewhite;
-  align-items: center;
-}
-
-
-.logo_row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.logo_container {
-  color: antiquewhite;
-  padding: auto;
-  text-align: center;
-}
-
-.logo_container img {
-  max-width: 20px; /* Adjust the size as needed */
-  height: 20px;
-}
-
+  @media screen and (max-width: 768px)  {
+    
+    .home_container{
+      height: max-content;
+      margin-top: 30%;
+    }
+   .row{
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .profile_card{
+    margin-bottom: 20%;
+   }
+   .homePage_icons{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+  .quote {
+    text-align: center;
+  }
+  }
+  @media (max-width: 950px) {
+    .heading {
+      margin-top: 5%;
+    }
+  }

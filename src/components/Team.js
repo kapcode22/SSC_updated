@@ -1,121 +1,114 @@
-import React from 'react'
-import coun from "../images/counselor.jpg"
-import tstyle from "./Teams.module.css"
-import linkdin from '../images/linkedin.png'
-import mail from '../images/mail.png'
-import insta from '../images/instagram.png'
-import divya from '../images/divya.jpg'
-import abhi from '../images/abhishek.png'
-import amit from "../images/amit.png"
+import React from "react";
+import coun from "../images/counselor.jpg";
+import tstyle from "./Teams.module.css";
+
+import divya from "../images/divya.jpg";
+import abhi from "../images/abhishek.png";
+import amit from "../images/amit.jpg";
+import {
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillMail,
+} from "react-icons/ai";
 const Team = () => {
   const team = [
-    {name: 'Divya Tiwari', img: divya, post: 'Jt. General Secy'},
-    {name: 'Abhishek Anand', img: abhi, post: 'General Secy'},
-    {name: 'Amit Roy', img: amit, post: 'Jt. General Secy'}
-  ]
+    {
+      name: "Divya Tiwari",
+      img: divya,
+      post: "Joint Secretary",
+      instaLink: "https://instagram.com/0903_divya?igshid=MzMyNGUyNmU2YQ==",
+      mailLink: "mailto:divya.tiwari.bce21@iitbhu.ac.in",
+      linkdinLink: "https://www.linkedin.com/in/divya-tiwari-8a6195225",
+    },
+    {
+      name: "Abhishek Anand",
+      img: abhi,
+      post:"General Secretary",
+      instaLink:
+        "https://instagram.com/abhishekanand1245?igshid=OGQ5ZDc2ODk2ZA==",
+      mailLink: "mailto:abhianand44444@gmail.com",
+      linkdinLink:
+        "https://www.linkedin.com/in/abhishek-anand08?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      name: "Amit Roy",
+      img: amit,
+      post:"Joint Secretary",
+      instaLink: "https://instagram.com/amitroy03_?igshid=OGQ5ZDc2ODk2ZA==",
+      mailLink: "mailto:amit.roy.che21@itbhu.ac.in",
+      linkdinLink: "https://www.linkedin.com/in/amit-roy--",
+    },
+  ];
   return (
-    <div className={tstyle.body}>
-      <div className={tstyle.container}>
-        <h1 style={{ color: "white" }}>
-          {" "}
-          <ul>MEET OUR TEAM :</ul>
-        </h1>
-      </div>
+    <div>
+      <div div className={tstyle.home_container} style={{marginBottom:'6rem'}}>
+        <div>
+          <p className={tstyle.heading}>
+            Meet the Faces behind our Council
+          </p>
+          <p className={tstyle.quote}>
+            Teamwork is the ability to work together toward a common vision.
+            The ability to direct individual accomplishments toward
+            organizational objectives. It is the fuel that allows common people
+            to attain uncommon results.
+          </p>
+        </div>
 
-      <div class="row cols-md-12 g-4 align-items-center justify-content-md-center">
-        <div className="col-md-4 mt-5">
-          <div className={tstyle.card_body}>
-            <div className={tstyle.card}>
-              <img src={coun} alt="Image 1" />
-              <h4 style={{ color: "aliceblue" }}>Dr. Sukhada</h4>
-              <h5 style={{ color: "aliceblue" }}>Counsellor</h5>
-              <div class={tstyle.logo_row}>
-                <div class={tstyle.logo_container}>
-                  <img src={insta} alt="Instagram Logo" />
+        <div className={tstyle.row} >
+          <div className={tstyle.profile_card}>
+            <div className={tstyle.img}>
+              <img src={coun} alt="..." />
+            </div>
+            <div className={tstyle.caption}>
+              <h3>Dr. Sukhada </h3>
+              <p>Counsellor</p>
+              <div class={tstyle.homePage_icons}>
+              
+                <div class={tstyle.social_icons}>
+                  <a href="sukhada.hss@iitbhu.ac.in">
+                    <AiFillMail />
+                  </a>
                 </div>
-                <div class={tstyle.logo_container}>
-                  <img src={mail} alt="Instagram Logo" />
-                </div>
-                <div class={tstyle.logo_container}>
-                  <img src={linkdin} alt="Instagram Logo" />
-                </div>
+               
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className={tstyle.card_body}>
-        {team.map((member, index) => (
-          <div className={tstyle.card} key={index}>
-            <img src={member.img} alt="Image 1" />
-            <h4>{member.name}</h4>
-            <h5>{member.post}</h5>
-            <div class={tstyle.logo_row}>
-              <div class={tstyle.logo_container}>
-                <img src={insta} alt="Instagram Logo" />
+        <div className={tstyle.row} >
+          {team.map((member, index) => (
+            <div className={tstyle.profile_card} key={index}>
+              <div className={tstyle.img}>
+                <img src={member.img} alt="..." />
               </div>
-              <div class={tstyle.logo_container}>
-                <img src={mail} alt="Mail Logo" />
-              </div>
-              <div class={tstyle.logo_container}>
-                <img src={linkdin} alt="LinkedIn Logo" />
+              <div className={tstyle.caption}>
+                <h3>{member.name}</h3>
+                <p>{member.post}</p>
+                <div class={tstyle.homePage_icons}>
+                  <div class={tstyle.social_icons}>
+                    <a href={member.instaLink}>
+                      <AiFillInstagram />
+                    </a>
+                  </div>
+                  <div class={tstyle.social_icons}>
+                    <a href={member.mailLink}>
+                      <AiFillMail />
+                    </a>
+                  </div>
+                  <div class={tstyle.social_icons}>
+                    <a href={member.linkdinLink}>
+                      <AiFillLinkedin />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
-        {/* <div className={tstyle.card}>
-          <img src={divya} alt="Image 2" />
-          <h4 style={{ color: "aliceblue" }}>Divya Tiwari</h4>
-          <h5 style={{ color: "aliceblue" }}>Jt. general Secy</h5>
-          <div class={tstyle.logo_row}>
-            <div class={tstyle.logo_container}>
-              <img src={insta} alt="Instagram Logo" />
-            </div>
-            <div class={tstyle.logo_container}>
-              <img src={mail} alt="Instagram Logo" />
-            </div>
-            <div class={tstyle.logo_container}>
-              <img src={linkdin} alt="Instagram Logo" />
-            </div>
-          </div>
-        </div>
-        <div className={tstyle.card}>
-          <img src={abhi} alt="Image 2" />
-          <h4 style={{ color: "aliceblue" }}>Abhishek Anand</h4>
-          <h5 style={{ color: "aliceblue" }}> General Secy</h5>
-          <div class={tstyle.logo_row}>
-            <div class={tstyle.logo_container}>
-              <img src={insta} alt="Instagram Logo" />
-            </div>
-            <div class={tstyle.logo_container}>
-              <img src={mail} alt="Instagram Logo" />
-            </div>
-            <div class={tstyle.logo_container}>
-              <img src={linkdin} alt="Instagram Logo" />
-            </div>
-          </div>
-        </div>
-        <div className={tstyle.card}>
-          <img src={amit} alt="Image 3" />
-          <h4 style={{ color: "aliceblue" }}>Amit Roy</h4>
-          <h5 style={{ color: "aliceblue" }}>Jt. general Secy</h5>
-          <div class={tstyle.logo_row}>
-            <div class={tstyle.logo_container}>
-              <img src={insta} alt="Instagram Logo" />
-            </div>
-            <div class={tstyle.logo_container}>
-              <img src={mail} alt="Instagram Logo" />
-            </div>
-            <div class={tstyle.logo_container}>
-              <img src={linkdin} alt="Instagram Logo" />
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );
-}
+};
 
-export default Team
+export default Team;

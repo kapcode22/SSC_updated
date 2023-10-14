@@ -6,10 +6,11 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fuga tempore",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fuga tempore",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fuga tempore",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fuga tempore",
+          "Welcome to Social Service Council Of IIT BHU ",
+          "Welcome to Social Service Council Of IIT BHU ",
+          "Welcome to Social Service Council Of IIT BHU ",
+          "Welcome to Social Service Council Of IIT BHU ",
+
         ],
         autoStart: true,
         loop: true,
